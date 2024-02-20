@@ -5,7 +5,6 @@ import EmailProvider from "next-auth/providers/email";
 import { PrismaAdapter } from "@next-auth/prisma-adapter";
 
 import prisma from "./db"
-import { signOut } from "next-auth/react";
 
 export const authOptions = {
   adapter: PrismaAdapter(prisma),

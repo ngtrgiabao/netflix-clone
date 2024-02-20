@@ -17,7 +17,7 @@ export default async function SignInPage() {
 
   return (
     <div className="mt-24 rounded bg-black/80 py-10 px-6 md:mt-0 md:max-w-sm md:px-14">
-      <form>
+      <form method="post" action="/api/auth/signin">
         <h1 className="text-3xl font-semibold text-white">
           Sign in
         </h1>
@@ -33,7 +33,7 @@ export default async function SignInPage() {
             variant="destructive"
             className="w-full bg-[#e50914]"
           >
-            Sign Up
+            Sign in
           </Button>
         </div>
       </form>
