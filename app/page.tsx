@@ -6,13 +6,9 @@ import Navbar from "./components/Navbar";
 export default async function Home() {
   const session = await getServerSession(authOptions);
 
-  // if (!session) {
-  //   return redirect("/sign-in")
-  // } else {
-  //   return redirect("/")
-  // }
-
-  return (
-      <Navbar />    
-  )
+  if (!session) {
+    return redirect("/sign-in")
+  } else {
+    return redirect("/home")
+  }
 }

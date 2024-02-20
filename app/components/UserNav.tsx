@@ -21,7 +21,7 @@ export default function UserNav() {
           </div>
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
-        <DropdownMenuItem className="cursor-pointer" onClick={() => signOut()}>
+        <DropdownMenuItem className="cursor-pointer" onClick={() => signOut({ callbackUrl: '/', redirect: true })}>
           Logout
         </DropdownMenuItem>
       </DropdownMenuContent>
